@@ -18,7 +18,7 @@ const App = () => {
       setUser(userObj);
     };
     //Only run getMe() if we have a token
-    if(token) {
+    if (token) {
       getMe();
     }
   }, [token]);// Update the user if the token changes
@@ -36,8 +36,8 @@ const App = () => {
   return (
     <div>
       <h1>{user?.username}</h1>
-      <Register setToken={setToken} />
-      <Posts posts={posts}/>
+      {!token ? <Register setToken={setToken} /> : null}
+      <Posts posts={posts} />
     </div>
   )
 }
