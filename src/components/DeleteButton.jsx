@@ -1,11 +1,9 @@
 import React from "react";
 
-const DeleteButton = () => {
+const DeleteButton = ({ postId, removePost }) => {
     return (
-        <button className="delete-button">Delete Me!</button>
+        <button className="delete-button" onClick={removePost(postId)}>Delete Me!</button>
     )
 }
-
-export default DeleteButton
 
 export default DeleteButton

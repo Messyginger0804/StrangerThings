@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { logIn } from "../api/auth";
 
-const LoginForm = ({setToken, navToHome, updatePosts}) => {
+const LoginForm = ({ setToken, navToHome, updatePosts }) => {
 	const [username, setUsername] = useState("");
 	const [password, setPassword] = useState("");
 
 	return (
 		<div>
+			<h2>login here</h2>
 			<form
 				onSubmit={async (e) => {
 					e.preventDefault();
