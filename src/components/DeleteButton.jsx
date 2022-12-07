@@ -2,8 +2,10 @@ import React from "react";
 
 const DeleteButton = () => {
     return (
-        <button className="delete-button">DELETE ME!</button>
+        <button className="delete-button">Delete Me!</button>
     )
 }
 
-export default DeleteButton;
+export default DeleteButton
+
+export default DeleteButton

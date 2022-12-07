@@ -20,7 +20,6 @@ const Post = ({ post }) => {
         <p>Created at: {post.createdAt}</p>
         <p>Updated at: {post.updatedAt}</p>
         {post.isAuthor ? <DeleteButton /> : null}
-
       </div>
     </>
   )
