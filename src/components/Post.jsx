@@ -19,7 +19,7 @@ const Post = ({ post, removePost }) => {
         <p>Price: {post.price}</p>
         <p>Created at: {post.createdAt}</p>
         <p>Updated at: {post.updatedAt}</p>
-        {post.isAuthor ? <DeleteButton postID={post._id} removePost={removePost} /> : null}
+        {post.isAuthor ? <DeleteButton postId={post._id} removePost={removePost} /> : null}
       </div>
     </>
   )

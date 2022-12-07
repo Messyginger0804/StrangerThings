@@ -1,7 +1,6 @@
 const COHORTAPI =
     "https://strangers-things.herokuapp.com/api/2211-ftb-et-web-ft";
 
-//add auth ability
 export const fetchPosts = async (token) => {
     try {
         const response = await fetch(`${COHORTAPI}/posts`, {
@@ -47,15 +46,14 @@ export const submitPost = async (token, title, description, price, location, wil
 export const deletePost = async (token, postId) => {
     try {
         const response = await fetch(`${COHORTAPI}/posts/${postId}`, {
-            method: "DELETE",
+            method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`
             }
         })
+
     } catch (err) {
-        console.error("error, you can't delete this n'", err)
+        console.error("Can't delete that one.", err)
     }
-
-
 }
