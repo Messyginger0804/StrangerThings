@@ -41,6 +41,7 @@ const App = () => {
     setToken(undefined);
     localStorage.clear();
     setUser({});
+    setPosts([...posts]);
   }
 
   const updatePosts = () => {
