@@ -66,6 +66,10 @@ const App = () => {
   const navToSignIn = () => {
     navigate('/signIn')
   }
+  const navToProfile = () => {
+    navigate('/profile')
+  }
+
 
   return (
     <div className='root-container'>
